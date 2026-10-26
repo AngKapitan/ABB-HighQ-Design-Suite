@@ -1,0 +1,25 @@
+Name,Unit,Expression,Value,Comments,Favorite
+dinter,mm,0.1 mm * power_scaling_current,0.316,,false
+ncore,,1,1,,false
+Lm,,200,200,,false
+Iprms,,10,10,,false
+wwire,mm,6.666666667 mm * power_scaling_current,21.082,,false
+Np,,8,8,,false
+lg,,0.1 * power_scaling_voltage * power_scaling_voltage,1,,false
+wcent,mm,10 mm * power_scaling_voltage,31.623,,false
+hwire,mm,0.3 mm * power_scaling_current,0.949,,false
+wwindow,mm,wwire + 2 * dleftright,27.406,,false
+lwindow,mm,( Np + Np ) * hwire + ( 2 * Np - 1 ) * dinter + 2 * dupperdown,26.247,,false
+lcore,mm,50.86 mm * power_scaling_voltage,160.833,,false
+lctr,mm,lcore * ncore,160.833,,false
+wout,mm,wcent * 0.5,15.811,,false
+dleftright,mm,1 mm * power_scaling_current,3.162,,false
+dupperdown,mm,1 mm * power_scaling_current,3.162,,false
+power_vin_orig,,100,100,100,false
+power_orig,,1000,1000,1000,false
+power_iin_orig,,power_orig / power_vin_orig,10,10,false
+power_vin_new,,1000,1000,1000,false
+power_new,,100000,100000,100000,false
+power_iin_new,,power_new / power_vin_new,100,100,false
+power_scaling_current,,( ( sqrt(power_iin_new / power_iin_orig) ) * 1 mm ) / mm,3.16228,3.16228,false
+power_scaling_voltage,,sqrt(power_vin_new / power_vin_orig),3.16228,3.16228,false

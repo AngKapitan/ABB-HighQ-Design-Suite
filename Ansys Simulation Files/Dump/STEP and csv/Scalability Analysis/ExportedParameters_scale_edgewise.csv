@@ -1,0 +1,9 @@
+Name,Unit,Expression,Value,Comments,Favorite
+power_vin_orig,,100,100,100,false
+power_orig,,1000,1000,1000,false
+power_iin_orig,,power_orig / power_vin_orig,10,10,false
+power_vin_new,,100 * sqrt(10),316.228,1000,false
+power_new,,10000,10000,100000,false
+power_iin_new,,power_new / power_vin_new,31.6228,100,false
+power_scaling_current,,( ( sqrt(power_iin_new / power_iin_orig) ) * 1 mm ) / mm,1.77828,3.16228,false
+power_scaling_voltage,,sqrt(power_vin_new / power_vin_orig),1.77828,3.16228,false
