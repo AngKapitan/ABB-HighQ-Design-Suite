@@ -1,0 +1,13 @@
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cgdi1_2_1-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cgdi1_2_2-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cgdi2_1_1-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cgdi2_1_2-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cgdi2_2_1-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cgdi2_2_2-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=GD1-5
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=GD1-8
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=GD2-3
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=GD2-5
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=GD2-8
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=VDDI-1
+Added Member To Class: ClassName=GD Member=Component DCDC_Q4 PQS075-S5-S15-S

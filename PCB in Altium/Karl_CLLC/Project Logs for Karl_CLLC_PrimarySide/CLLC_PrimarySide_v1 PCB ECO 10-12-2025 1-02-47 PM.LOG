@@ -1,0 +1,28 @@
+Change Component Footprint: Designator=C_in Old Footprint=R60PR4100AA50K New Footprint=B32776P8106K000
+Change Component Comment : Designator=C_in Old Comment=R60PR4100AA50K New Comment=B32776P8106K000
+Change component parameters: Designator = "C_in" ("C_in"); Footprint = "R60PR4100AA50K"; UniqueID = "\PVQBKFQN" ("\PVQBKFQN")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://product.tdk.com/system/files/dam/doc/product/capacitor/film/mkp_mfp/data_sheet/20/20/ds/mkp_b32774p_778p.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "37mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "B32776P8106K000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "871-B32776P8106K000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B32776P8106K000?qs=nmF%252BdLtsfhVT2hemhPYoWA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=C_in_2(B32774P8105K000)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://product.tdk.com/system/files/dam/doc/product/capacitor/film/mkp_mfp/data_sheet/20/20/ds/mkp_b32774p_778p.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "19mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "B32774P8105K000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "871-B32774P8105K000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B32774P8105K000?qs=nmF%252BdLtsfhWqESChDIGAwQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC1_1 Pin=C_in-3
+Added Pin To Net: NetName=Q2_S Pin=C_in-4
+Added Pin To Net: NetName=NetC1_1 Pin=C_in_2-1
+Added Pin To Net: NetName=Q2_S Pin=C_in_2-2
+Added Pin To Net: NetName=NetCdc_Q1_out_1 Pin=Cgdi1_2_1-1
+Added Pin To Net: NetName=NetCdc_Q1_out_1 Pin=Cgdi1_2_2-1
+Added Pin To Net: NetName=NetCdc_Q1_out_1 Pin=GD1-8
+Added Member To Class: ClassName=PrimarySide Member=Component C_in_2 B32774P8105K000

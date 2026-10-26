@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetC_r1_1 Pin=C_r1-1
+Removed Pin From Net: NetName=NetLr2_S1 Pin=Lr2-S1
+Added Pin To Net: NetName=NetLr2_S1 Pin=Lr1-S1
+Added Pin To Net: NetName=NetC_r1_1 Pin=Lr2-F1
+Change Net Name : Old Net Name=NetC_r1_1 New Net Name=NetLr2_F1
+Change Net Name : Old Net Name=NetLr2_S1 New Net Name=NetLr1_S1
+Added Pin To Net: NetName=NetC_r1_1 Pin=C_r1-1
+Added Pin To Net: NetName=NetC_r1_1 Pin=Lr2-S1
+Added Net: Name=NetC_r1_1
+Added Member To Class: ClassName=PrimarySide Member=Component C_r1 C4AQQBU4140M1WJ
+Added Member To Class: ClassName=PrimarySide Member=Component Lr2 ER26A2DC-6R8K

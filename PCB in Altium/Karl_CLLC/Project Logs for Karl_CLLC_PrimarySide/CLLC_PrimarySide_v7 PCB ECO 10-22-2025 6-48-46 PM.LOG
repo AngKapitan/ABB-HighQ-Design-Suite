@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=Q1_D Pin=C_in-3
+Removed Pin From Net: NetName=Q2_S Pin=C_in-4
+Change Component Footprint: Designator=C_in_2 Old Footprint=B32774P8105K000 New Footprint=R76MR4100SE40K
+Change Component Footprint: Designator=C_in Old Footprint=B32776P8106K000 New Footprint=R60MR51005040K
+Change Component Comment : Designator=C_in_2 Old Comment=B32774P8105K000 New Comment=R76MR4100SE40K
+Change Component Comment : Designator=C_in Old Comment=B32776P8106K000 New Comment=R60MR51005040K
+Change component parameters: Designator = "C_in" ("C_in"); Footprint = "B32776P8106K000"; UniqueID = "\ZDXKONCG" ("\ZDXKONCG")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://content.kemet.com/datasheets/KEM_F3103_R60.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "37.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "R60MR51005040K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "80-R60MR51005040K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=80-R60MR51005040K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C_in_2" ("C_in_2"); Footprint = "B32774P8105K000"; UniqueID = "\DEPQECGB" ("\DEPQECGB")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "R76MR4100SE40K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/r76mr4100se40k/kemet-corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.kemet.com/component-documentation/download/specsheet/R76MR4100SE40K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "22.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "R76MR4100SE40K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "80-R76MR4100SE40K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=80-R76MR4100SE40K"; VariantName = "[No Variations]"

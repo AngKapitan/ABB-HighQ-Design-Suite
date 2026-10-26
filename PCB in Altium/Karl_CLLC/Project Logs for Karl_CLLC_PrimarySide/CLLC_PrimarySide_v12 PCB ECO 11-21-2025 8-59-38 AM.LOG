@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=Q1_D Pin=C_in-1
+Removed Pin From Net: NetName=Q2_S Pin=C_in-2
+Removed Member From Class: ClassName=PrimarySide Member=C_in
+Added Component: Designator=C?(R71XR510050H0K)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "R71XR510050H0K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/r71xr510050h0k/kemet-corporation?region=europe"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://content.kemet.com/datasheets/KEM_F3130_R71H.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "28.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "R71XR510050H0K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "80-R71XR510050H0K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/KEMET/R71XR510050H0K?qs=Jslch3jnSjmgqBZUL0Ww4w%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Q1_D Pin=C?-1
+Added Pin To Net: NetName=Q2_S Pin=C?-2
+Added Member To Class: ClassName=PrimarySide Member=Component C? R71XR510050H0K

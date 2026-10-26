@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetCgdi1_1_1_1 Pin=VDDI-1
+Removed Pin From Net: NetName=NetCdc_Q1_in_2 Pin=VDDI-2
+Removed Member From Class: ClassName=GD Member=VDDI
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cdc_Q1_in-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cdc_Q2_in-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cdc_Q3_in-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=Cdc_Q4_in-1
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=DCDC_Q1-2
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=DCDC_Q2-2
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=DCDC_Q3-2
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=DCDC_Q4-2
+Added Pin To Net: NetName=NetCgdi1_1_1_1 Pin=VDD_DC-1
+Change Net Name : Old Net Name=NetCgdi1_1_1_1 New Net Name=NetCdc_Q1_in_1
+Added Member To Class: ClassName=GD Member=Component Cdc_Q4_in GRM31CR71H475KA12L
+Added Member To Class: ClassName=GD Member=Component Cdc_Q4_out GCM21BR71H105KA03L
+Added Member To Class: ClassName=GD Member=Component CDT1 GCM21BR72A104MA37K
+Added Member To Class: ClassName=GD Member=Component DCDC_Q4 PQS075-S5-S15-S

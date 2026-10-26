@@ -1,0 +1,28 @@
+Added Component: Designator=U1(BPUE3630)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://docs.rs-online.com/dd83/0900766b81241ab2.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "30mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Mizutani Electric"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BPUE36-30"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U3(BPUE3630)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://docs.rs-online.com/dd83/0900766b81241ab2.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "30mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Mizutani Electric"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BPUE36-30"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Q2_S Pin=U1-1
+Added Pin To Net: NetName=Q2_S Pin=U1-2
+Added Pin To Net: NetName=Q2_S Pin=U2-1
+Added Pin To Net: NetName=Q2_S Pin=U2-2
+Added Pin To Net: NetName=Q2_S Pin=U3-1
+Added Pin To Net: NetName=Q2_S Pin=U3-2
+Added Pin To Net: NetName=Q2_S Pin=U4-1
+Added Pin To Net: NetName=Q2_S Pin=U4-2
+Added Member To Class: ClassName=PrimarySide Member=Component U1 BPUE36-30
+Added Member To Class: ClassName=PrimarySide Member=Component U3 BPUE36-30

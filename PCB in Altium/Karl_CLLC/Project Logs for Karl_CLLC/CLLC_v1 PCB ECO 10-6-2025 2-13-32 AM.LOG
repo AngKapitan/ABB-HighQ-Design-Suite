@@ -1,0 +1,58 @@
+Removed Member From Class: ClassName=PrimarySide Member=DCDC_Q1
+Removed Member From Class: ClassName=PrimarySide Member=DCDC_Q2
+Removed Member From Class: ClassName=PrimarySide Member=DCDC_Q3
+Removed Member From Class: ClassName=PrimarySide Member=DCDC_Q4
+Removed Member From Class: ClassName=PrimarySide Member=GD1
+Removed Member From Class: ClassName=PrimarySide Member=GD2
+Removed Member From Class: ClassName=PrimarySide Member=J_GD1
+Removed Member From Class: ClassName=PrimarySide Member=J_GD2
+Removed Member From Class: ClassName=PrimarySide Member=OUT+
+Removed Member From Class: ClassName=PrimarySide Member=OUT-
+Removed Member From Class: ClassName=PrimarySide Member=P+
+Removed Member From Class: ClassName=PrimarySide Member=P-
+Change Component Comment : Designator=GD1 Old Comment=SI8274AB4D-IS1 New Comment=SI8274GB4D-IS1
+Change component parameters: Designator = "GD1" ("GD1"); Footprint = "SOIC127P600X175-16N"; UniqueID = "\RVELNOWH" ("\RVELNOWH")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/data-sheets/Si827x.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.75mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Skyworks"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SI8274GB4D-IS1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "634-SI8274GB4D-IS1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SI8274GB4D-IS1?qs=j6MGy4L9yX3Ou%2FIj7aSdKQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=RDT1(3224W1104G)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "3224W-1-104G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/3224w-1-104g/bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/docs/product-datasheets/3224.pdf?sfvrsn=c872982f_10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "5.55mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3224W-1-104G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-3224W-1-104G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/3224W-1-104G?qs=tEaODSGlU8NOeIAULE3a4g%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=VDDI(SHDR2W60P0X250_1X2_750X640X880P)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "B02B-XASK-1(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/b02b-xask-1-lf-sn/jst-manufacturing?utm_currency=USD&region=europe"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.jst-mfg.com/product/pdf/eng/eXA1.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "JST (JAPAN SOLDERLESS TERMINALS)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "B02B-XASK-1(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/JST-Commercial/B02B-XASK-1LFSN?qs=IKkN%2F947nfBty2GocXf7QA%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=GD1-4
+Added Pin To Net: NetName=GND Pin=J_GD1-2
+Added Pin To Net: NetName=GND Pin=J_GD1-3
+Added Pin To Net: NetName=GND Pin=J_GD1-4
+Added Pin To Net: NetName=GND Pin=J_GD1-5
+Added Pin To Net: NetName=GND Pin=VDDI-2
+Added Pin To Net: NetName=NetGD1_1 Pin=GD1-1
+Added Pin To Net: NetName=NetGD1_1 Pin=J_GD1-1
+Added Net: Name=NetGD1_1
+Added Pin To Net: NetName=NetGD1_3 Pin=GD1-3
+Added Pin To Net: NetName=NetGD1_3 Pin=GD1-5
+Added Pin To Net: NetName=NetGD1_3 Pin=VDDI-1
+Added Net: Name=NetGD1_3
+Added Pin To Net: NetName=Q1_HI_GD Pin=Q1_HI-1
+Added Net: Name=Q1_HI_GD
+Added Pin To Net: NetName=Q1_HI_LO Pin=Q2_LO-1
+Added Net: Name=Q1_HI_LO
+Added Class: Name=GD

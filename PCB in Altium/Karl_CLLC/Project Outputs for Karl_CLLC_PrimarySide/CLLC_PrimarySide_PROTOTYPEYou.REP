@@ -1,0 +1,274 @@
+*************************************************************
+FileName = CLLC_PrimarySide_PROTOTYPEYou.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Paste
+      File : CLLC_PrimarySide_PROTOTYPEYou.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : GND/OUTPUT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : CLLC_PrimarySide_PROTOTYPEYou.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : CLLC_PrimarySide_PROTOTYPEYou.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : GND/OUTPUT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : CLLC_PrimarySide_PROTOTYPEYou.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : CLLC_PrimarySide_PROTOTYPEYou.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : CLLC_PrimarySide_PROTOTYPEYou.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+*************************************************************
+
+*************************************************************
+Generating : GND/OUTPUT
+      File : CLLC_PrimarySide_PROTOTYPEYou.GBL
+
+    Adding Layer      : GND/OUTPUT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : HVDC
+      File : CLLC_PrimarySide_PROTOTYPEYou.G2
+
+    Adding Layer      : HVDC
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : SIG
+      File : CLLC_PrimarySide_PROTOTYPEYou.G1
+
+    Adding Layer      : SIG
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : CLLC_PrimarySide_PROTOTYPEYou.GTL
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : CLLC_PrimarySide_PROTOTYPEYou.GM
+
+
+Used DCodes :
+    D68
+*************************************************************
+

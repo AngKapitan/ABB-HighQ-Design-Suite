@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetCdc_Q3_out_1 Pin=Cdc_Q3_out-1
+Removed Pin From Net: NetName=Q2_S Pin=Cdc_Q3_out-2
+Removed Pin From Net: NetName=NetCdc_Q4_out_1 Pin=Cdc_Q4_out-1
+Removed Pin From Net: NetName=Q3_S Pin=Cdc_Q4_out-2
+Added Pin To Net: NetName=NetCdc_Q4_out_1 Pin=Cdc_Q3_out-1
+Added Pin To Net: NetName=Q3_S Pin=Cdc_Q3_out-2
+Added Pin To Net: NetName=NetCdc_Q3_out_1 Pin=Cdc_Q4_out-1
+Added Pin To Net: NetName=Q2_S Pin=Cdc_Q4_out-2
+Change Net Name : Old Net Name=NetCdc_Q3_out_1 New Net Name=NetCdc_Q4_out_1
+Change Net Name : Old Net Name=NetCdc_Q4_out_1 New Net Name=NetCdc_Q3_out_1

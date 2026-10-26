@@ -1,0 +1,10 @@
+Added Component: Designator=C?(GCJ32x)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "GCJ32DR7LV104KW01K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/gcj32dr7lv104kw01k/murata-manufacturing?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ32DR7LV104KW01-00B.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ32DR7LV104KW01K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ32D7LV104KW01K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ32DR7LV104KW01K?qs=By6Nw2ByBD2ciFrUl9IBhg%3D%3D"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=PrimarySide Member=Component C? GCJ32DR7LV104KW01K

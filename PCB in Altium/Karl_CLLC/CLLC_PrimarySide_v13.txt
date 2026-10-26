@@ -1,0 +1,10 @@
+Board Information Report
+Filename     : C:\Users\Public\Documents\Altium\Karl_CLLC\CLLC_PrimarySide_v13.PcbDoc
+Date         : 12/10/2025
+Time         : 3:30:47 PM
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 161.1mmx167.75mm
+    Components on board, 87
+count : 2

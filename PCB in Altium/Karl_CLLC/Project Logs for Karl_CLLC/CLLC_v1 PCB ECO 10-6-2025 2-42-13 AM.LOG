@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=C? Old Footprint=GRM15x New Footprint=CAPC1608X90N
+Change Component Comment : Designator=C? Old Comment=GRM155R71H104KE14J New Comment=GRM188D72A105KE01W
+Change Component Designator: OldDesignator=Ctry NewDesignator=CDT1
+Change component parameters: Designator = "C?" ("C?"); Footprint = "GRM15x"; UniqueID = "\AEEARJGU" ("\AEEARJGU")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "GRM188D72A105KE01W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/grm188d72a105ke01w/murata-manufacturing?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.9mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GRM188D72A105KE01W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GRM188D72A105KE1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM188D72A105KE01W?qs=Z%252BL2brAPG1KkI%252BiuMMAijQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=CDT1-2
+Added Pin To Net: NetName=NetCDT1_1 Pin=CDT1-1
+Added Pin To Net: NetName=NetCDT1_1 Pin=RDT1-2
+Added Pin To Net: NetName=NetCDT1_1 Pin=RDT1-3
+Added Net: Name=NetCDT1_1
+Added Member To Class: ClassName=GD Member=Component C? GRM188D72A105KE01W

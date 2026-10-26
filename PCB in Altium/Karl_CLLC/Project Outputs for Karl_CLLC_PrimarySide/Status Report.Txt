@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Karl_CLLC_PrimarySide.PrjPcb]
+   Generated File[CLLC_PrimarySide_PROTOTYPEYou.TXT]
+   Generated File[CLLC_PrimarySide_PROTOTYPEYou.LDP]
+   Generated File[CLLC_PrimarySide_PROTOTYPEYou.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 3:26:39 PM On 12/18/2025

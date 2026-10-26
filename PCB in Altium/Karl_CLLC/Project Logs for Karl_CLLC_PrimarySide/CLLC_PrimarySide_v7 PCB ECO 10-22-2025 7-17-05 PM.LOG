@@ -1,0 +1,228 @@
+Removed Pin From Net: NetName=Q2_S Pin=C1-2
+Removed Pin From Net: NetName=Q1_D Pin=C2-1
+Removed Pin From Net: NetName=Q2_S Pin=C3-2
+Removed Pin From Net: NetName=Q1_D Pin=C4-1
+Removed Pin From Net: NetName=Q2_S Pin=C5-2
+Removed Pin From Net: NetName=Q1_D Pin=C6-1
+Removed Pin From Net: NetName=Q2_S Pin=C7-2
+Removed Pin From Net: NetName=Q1_D Pin=C8-1
+Removed Pin From Net: NetName=Q2_S Pin=C9-2
+Removed Pin From Net: NetName=Q1_D Pin=C10-1
+Removed Pin From Net: NetName=Q2_S Pin=C11-2
+Removed Pin From Net: NetName=Q1_D Pin=C12-1
+Removed Pin From Net: NetName=Q2_S Pin=C13-2
+Removed Pin From Net: NetName=Q1_D Pin=C14-1
+Removed Pin From Net: NetName=Q2_S Pin=C15-2
+Removed Pin From Net: NetName=Q1_D Pin=C16-1
+Removed Pin From Net: NetName=Q1_D Pin=C17-1
+Removed Pin From Net: NetName=Q2_S Pin=C17-2
+Removed Pin From Net: NetName=Q1_D Pin=C18-1
+Removed Pin From Net: NetName=Q2_S Pin=C18-2
+Removed Pin From Net: NetName=Q1_D Pin=C19-1
+Removed Pin From Net: NetName=Q2_S Pin=C19-2
+Removed Pin From Net: NetName=Q1_D Pin=C20-1
+Removed Pin From Net: NetName=Q2_S Pin=C20-2
+Removed Member From Class: ClassName=PrimarySide Member=C17
+Removed Member From Class: ClassName=PrimarySide Member=C18
+Removed Member From Class: ClassName=PrimarySide Member=C19
+Removed Member From Class: ClassName=PrimarySide Member=C20
+Change Component Footprint: Designator=C1 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C2 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C3 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C4 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C5 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C6 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C7 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C8 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C9 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C10 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C11 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C12 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C13 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C14 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C15 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Footprint: Designator=C16 Old Footprint=GCJ32x New Footprint=GCJ55D
+Change Component Comment : Designator=C1 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C2 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C3 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C4 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C5 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C6 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C7 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C8 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C9 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C10 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C11 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C12 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C13 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C14 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C15 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change Component Comment : Designator=C16 Old Comment=GCJ32DR7LV104KW01K New Comment=GCJ55DR7LV474KW01K
+Change component parameters: Designator = "C1" ("C1"); Footprint = "GCJ32x"; UniqueID = "\WEBOYPJH" ("\WEBOYPJH")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "GCJ32x"; UniqueID = "\VCJMMIUX" ("\VCJMMIUX")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "GCJ32x"; UniqueID = "\RUFKJBQO" ("\RUFKJBQO")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4" ("C4"); Footprint = "GCJ32x"; UniqueID = "\KPGCGEKD" ("\KPGCGEKD")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "GCJ32x"; UniqueID = "\OXPTJGUM" ("\OXPTJGUM")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "GCJ32x"; UniqueID = "\PVFBMJMR" ("\PVFBMJMR")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "GCJ32x"; UniqueID = "\MTIAIZJO" ("\MTIAIZJO")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8" ("C8"); Footprint = "GCJ32x"; UniqueID = "\TXKVIGMI" ("\TXKVIGMI")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9" ("C9"); Footprint = "GCJ32x"; UniqueID = "\MFNMINZM" ("\MFNMINZM")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10" ("C10"); Footprint = "GCJ32x"; UniqueID = "\NTZTJPQQ" ("\NTZTJPQQ")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C11" ("C11"); Footprint = "GCJ32x"; UniqueID = "\YJWVKRMN" ("\YJWVKRMN")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C12" ("C12"); Footprint = "GCJ32x"; UniqueID = "\AHYYEECA" ("\AHYYEECA")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C13" ("C13"); Footprint = "GCJ32x"; UniqueID = "\DCFFKXSB" ("\DCFFKXSB")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C14" ("C14"); Footprint = "GCJ32x"; UniqueID = "\CTRTZNSS" ("\CTRTZNSS")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C15" ("C15"); Footprint = "GCJ32x"; UniqueID = "\SLLYAMCM" ("\SLLYAMCM")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C16" ("C16"); Footprint = "GCJ32x"; UniqueID = "\DHGLVANT" ("\DHGLVANT")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCJ55DR7LV474KW01-00B.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "GCJ55DR7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "81-GCJ55D7LV474KW01K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCJ55DR7LV474KW01K?qs=By6Nw2ByBD00cj4z4sTn5Q%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=NetC1_2 Pin=C2-1
+Added Net: Name=NetC1_2
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=C4-1
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=C6-1
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=NetC7_2 Pin=C8-1
+Added Net: Name=NetC7_2
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=C10-1
+Added Net: Name=NetC9_2
+Added Pin To Net: NetName=NetC11_2 Pin=C11-2
+Added Pin To Net: NetName=NetC11_2 Pin=C12-1
+Added Net: Name=NetC11_2
+Added Pin To Net: NetName=NetC13_2 Pin=C13-2
+Added Pin To Net: NetName=NetC13_2 Pin=C14-1
+Added Net: Name=NetC13_2
+Added Pin To Net: NetName=NetC15_2 Pin=C15-2
+Added Pin To Net: NetName=NetC15_2 Pin=C16-1
+Added Net: Name=NetC15_2
