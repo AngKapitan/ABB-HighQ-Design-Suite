@@ -1,0 +1,167 @@
+*************************************************************
+FileName = CLLC_SecondarySide_PROTOTYPEyou.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Layer
+      File : CLLC_SecondarySide_PROTOTYPEyou.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : CLLC_SecondarySide_PROTOTYPEyou.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : CLLC_SecondarySide_PROTOTYPEyou.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : CLLC_SecondarySide_PROTOTYPEyou.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : CLLC_SecondarySide_PROTOTYPEyou.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : CLLC_SecondarySide_PROTOTYPEyou.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : CLLC_SecondarySide_PROTOTYPEyou.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : CLLC_SecondarySide_PROTOTYPEyou.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : CLLC_SecondarySide_PROTOTYPEyou.GM
+
+
+Used DCodes :
+    D38
+*************************************************************
+

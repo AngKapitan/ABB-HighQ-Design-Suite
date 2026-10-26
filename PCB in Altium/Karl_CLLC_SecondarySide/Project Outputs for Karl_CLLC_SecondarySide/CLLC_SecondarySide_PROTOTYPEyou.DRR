@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: CLLC_SecondarySide_PROTOTYPEyou.PcbDoc   12/18/2025  3:28:31 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : CLLC_SecondarySide_PROTOTYPEyou.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      1mm (39mil)                                               Round             12        PTH        197.68mm (7.78inch)
+T2      1.86mm (73mil)                                            Round             8         PTH        75.38mm (2.97inch)
+T3      3mm (118mil)                                              Round             4         PTH        378.00mm (14.88inch)
+T4      3.7mm (146mil)                                            Round             16        PTH        245.94mm (9.68inch)
+T5      4.5mm (177mil)                                            Round             4         PTH        64.50mm (2.54inch)
+T6      4.68mm (184mil)                                           Round             6         PTH        168.99mm (6.65inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              50
+
+Total Processing Time (hh:mm:ss) : 00:00:00

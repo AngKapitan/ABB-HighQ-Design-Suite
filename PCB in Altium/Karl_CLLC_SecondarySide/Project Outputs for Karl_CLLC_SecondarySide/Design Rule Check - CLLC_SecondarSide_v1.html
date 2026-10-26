@@ -1,0 +1,501 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD25\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12/12/2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4:32:38 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc">C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">51</td></tr>
+</table>
+</td>
+</table><a name="IDHIU4QEYKFSX4GILLB1CFHEQX4CTBCEGSTOKMLECVDRH1K51GS4HC"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHU3XDRWPD5FXXWFBMN0ZUX3QCTJ1SGBRFNNXSCPA4JDFTTDRKIF">Clearance Constraint (Gap=1.5mm) (InNet('GND')),(InNet('NetCo_1_1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA3ZWXWZT242XMRGGCTUXQYORSFYZGPGPDCP3NCK4QOHA34ZENCXF">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOQJ1445QFT0EHKPBRBBCEAGLPL1DFWN2P5HZ1CDX0F00SYRUU5XI">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO0IS4HRQXW1TKBUVKANNJO3KGONUGNC2J0YDMIYMHZEV2I4XWM">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDX20OTEEQB4WBGRY5JR3IUWXK4KRX2VKJ4EZLDBD1ADTGFYKLPRE">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIXR0PZ5LLZ2GLRV2PHC4QSGL1MZFPJOMNEYYWPCR5LKVN22E4P2D">Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGHIZOLVGPPLWBIGFYJWMHGXJ3NP5EIDMYCS4HBDWCCQ30IDCOJGG">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJDANPENRDXDPLSY45XZ5ZMCWAK00P52Y12YF2UJ5KA4YXLFREGP">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSP500SXYG1R5EXPVR42NJOPKXGRYIIU3RQPKIIEOCVLDRJQOQSL">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">30</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDR3DD1RUT1A0HHQUHRTWXD34RKN5MNL3IITF3CSBTWYLS23WDG5WD">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2ZUYTVW1VFJWC3J2JENNCGJNFMAJ2VCRXT0XFANGBW03EQFK3YVD">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2QKEZVAJA4EPIHG4WP1RVQT5QKKGD0MXERRJ2TPGCXN4FQLLOIZB">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDO2PTBNITEPPUONDLHI3F0WF3ZLNV0BDG5JGPJPMNEUDKGPLVUE0H">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ30MI5L204MCP4T0YLHJ2Q3LVFV1DUFMD1QDONIBJIJIXIQIINGO">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTVUYNNB2ECMSC51YYUBTTUIRUCJSFDWY2MQSNJBA0Q3WBTXDS1TE">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">51</td>
+</tr>
+</table><br><a name="IDO0IS4HRQXW1TKBUVKANNJO3KGONUGNC2J0YDMIYMHZEV2I4XWM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4246.984mil|Location2.X=4373.095mil|Location1.Y=4995.016mil|Location2.Y=5121.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4246.984mil|Location2.X=4373.095mil|Location1.Y=4995.016mil|Location2.Y=5121.126mil|Absolute=True">Un-Routed Net Constraint: Via (109.475mm,128.475mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4246.984mil|Location2.X=4373.095mil|Location1.Y=10113.126mil|Location2.Y=10239.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4246.984mil|Location2.X=4373.095mil|Location1.Y=10113.126mil|Location2.Y=10239.236mil|Absolute=True">Un-Routed Net Constraint: Via (109.475mm,258.475mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4771.984mil|Location2.X=4957.15mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4771.984mil|Location2.X=4957.15mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True">Un-Routed Net Constraint: Via (123.56mm,181.47mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5574.346mil|Location2.X=5759.512mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5574.346mil|Location2.X=5759.512mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True">Un-Routed Net Constraint: Via (143.94mm,181.47mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6504.268mil|Location2.X=6689.433mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6504.268mil|Location2.X=6689.433mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True">Un-Routed Net Constraint: Via (167.56mm,181.47mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7311.354mil|Location2.X=7496.52mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7311.354mil|Location2.X=7496.52mil|Location1.Y=7051.905mil|Location2.Y=7237.071mil|Absolute=True">Un-Routed Net Constraint: Via (188.06mm,181.47mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9128.874mil|Location2.X=9254.984mil|Location1.Y=4995.016mil|Location2.Y=5121.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9128.874mil|Location2.X=9254.984mil|Location1.Y=4995.016mil|Location2.Y=5121.126mil|Absolute=True">Un-Routed Net Constraint: Via (233.475mm,128.475mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9128.874mil|Location2.X=9254.984mil|Location1.Y=10113.126mil|Location2.Y=10239.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9128.874mil|Location2.X=9254.984mil|Location1.Y=10113.126mil|Location2.Y=10239.236mil|Absolute=True">Un-Routed Net Constraint: Via (233.475mm,258.475mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDSP500SXYG1R5EXPVR42NJOPKXGRYIIU3RQPKIIEOCVLDRJQOQSL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5399.375mil|Location2.X=5584.877mil|Location1.Y=7993.863mil|Location2.Y=8179.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5399.375mil|Location2.X=5584.877mil|Location1.Y=7993.863mil|Location2.Y=8179.365mil|Absolute=True">Hole Size Constraint: (4.68mm &gt; 2.54mm) Pad Lr3-F1(139.5mm,205.4mm) on Multi-Layer Actual Hole Size = 4.68mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5399.375mil|Location2.X=5584.877mil|Location1.Y=7584.414mil|Location2.Y=7769.916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5399.375mil|Location2.X=5584.877mil|Location1.Y=7584.414mil|Location2.Y=7769.916mil|Absolute=True">Hole Size Constraint: (4.68mm &gt; 2.54mm) Pad Lr3-S1(139.5mm,195mm) on Multi-Layer Actual Hole Size = 4.68mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7824.572mil|Location2.X=8010.074mil|Location1.Y=8253.706mil|Location2.Y=8439.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7824.572mil|Location2.X=8010.074mil|Location1.Y=8253.706mil|Location2.Y=8439.208mil|Absolute=True">Hole Size Constraint: (4.68mm &gt; 2.54mm) Pad Lr4-F1(201.1mm,212mm) on Multi-Layer Actual Hole Size = 4.68mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8234.021mil|Location2.X=8419.523mil|Location1.Y=8253.706mil|Location2.Y=8439.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8234.021mil|Location2.X=8419.523mil|Location1.Y=8253.706mil|Location2.Y=8439.208mil|Absolute=True">Hole Size Constraint: (4.68mm &gt; 2.54mm) Pad Lr4-S1(211.5mm,212mm) on Multi-Layer Actual Hole Size = 4.68mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5812.761mil|Location2.X=5998.263mil|Location1.Y=8824.572mil|Location2.Y=9010.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5812.761mil|Location2.X=5998.263mil|Location1.Y=8824.572mil|Location2.Y=9010.074mil|Absolute=True">Hole Size Constraint: (4.68mm &gt; 2.54mm) Pad Lr5-F1(150mm,226.5mm) on Multi-Layer Actual Hole Size = 4.68mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5403.312mil|Location2.X=5588.814mil|Location1.Y=8824.572mil|Location2.Y=9010.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5403.312mil|Location2.X=5588.814mil|Location1.Y=8824.572mil|Location2.Y=9010.074mil|Absolute=True">Hole Size Constraint: (4.68mm &gt; 2.54mm) Pad Lr5-S1(139.6mm,226.5mm) on Multi-Layer Actual Hole Size = 4.68mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8757.249mil|Location2.X=8904.168mil|Location1.Y=5359.611mil|Location2.Y=5506.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8757.249mil|Location2.X=8904.168mil|Location1.Y=5359.611mil|Location2.Y=5506.53mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT+-1(224.3mm,138mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8391.107mil|Location2.X=8538.027mil|Location1.Y=5359.611mil|Location2.Y=5506.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8391.107mil|Location2.X=8538.027mil|Location1.Y=5359.611mil|Location2.Y=5506.53mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT+-2(215mm,138mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8757.249mil|Location2.X=8904.168mil|Location1.Y=5635.202mil|Location2.Y=5782.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8757.249mil|Location2.X=8904.168mil|Location1.Y=5635.202mil|Location2.Y=5782.121mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT+-3(224.3mm,145mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8391.107mil|Location2.X=8538.027mil|Location1.Y=5635.202mil|Location2.Y=5782.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8391.107mil|Location2.X=8538.027mil|Location1.Y=5635.202mil|Location2.Y=5782.121mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT+-4(215mm,145mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.438mil|Location2.X=8892.357mil|Location1.Y=6206.068mil|Location2.Y=6352.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.438mil|Location2.X=8892.357mil|Location1.Y=6206.068mil|Location2.Y=6352.987mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT--1(224mm,159.5mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8379.296mil|Location2.X=8526.216mil|Location1.Y=6206.068mil|Location2.Y=6352.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8379.296mil|Location2.X=8526.216mil|Location1.Y=6206.068mil|Location2.Y=6352.987mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT--2(214.7mm,159.5mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.438mil|Location2.X=8892.357mil|Location1.Y=6481.659mil|Location2.Y=6628.578mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.438mil|Location2.X=8892.357mil|Location1.Y=6481.659mil|Location2.Y=6628.578mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT--3(224mm,166.5mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8379.296mil|Location2.X=8526.216mil|Location1.Y=6481.659mil|Location2.Y=6628.578mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8379.296mil|Location2.X=8526.216mil|Location1.Y=6481.659mil|Location2.Y=6628.578mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad OUT--4(214.7mm,166.5mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6835.989mil|Location2.X=6982.908mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6835.989mil|Location2.X=6982.908mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S+-1(175.5mm,249mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6835.989mil|Location2.X=6982.908mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6835.989mil|Location2.X=6982.908mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S+-2(175.5mm,239.7mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6560.399mil|Location2.X=6707.318mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6560.399mil|Location2.X=6707.318mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S+-3(168.5mm,249mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6560.399mil|Location2.X=6707.318mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6560.399mil|Location2.X=6707.318mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S+-4(168.5mm,239.7mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8764.076mil|Location2.X=8910.995mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8764.076mil|Location2.X=8910.995mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S--1(224.473mm,249mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8764.076mil|Location2.X=8910.995mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8764.076mil|Location2.X=8910.995mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S--2(224.473mm,239.7mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8488.485mil|Location2.X=8635.405mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8488.485mil|Location2.X=8635.405mil|Location1.Y=9729.69mil|Location2.Y=9876.609mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S--3(217.473mm,249mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8488.485mil|Location2.X=8635.405mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8488.485mil|Location2.X=8635.405mil|Location1.Y=9363.548mil|Location2.Y=9510.468mil|Absolute=True">Hole Size Constraint: (3.7mm &gt; 2.54mm) Pad S--4(217.473mm,239.7mm) on Multi-Layer Actual Hole Size = 3.7mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4250.359mil|Location2.X=4369.72mil|Location1.Y=4998.391mil|Location2.Y=5117.751mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4250.359mil|Location2.X=4369.72mil|Location1.Y=4998.391mil|Location2.Y=5117.751mil|Absolute=True">Hole Size Constraint: (3mm &gt; 2.54mm) Via (109.475mm,128.475mm) from Top Layer to Bottom Layer Actual Hole Size = 3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4250.359mil|Location2.X=4369.72mil|Location1.Y=10116.501mil|Location2.Y=10235.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4250.359mil|Location2.X=4369.72mil|Location1.Y=10116.501mil|Location2.Y=10235.861mil|Absolute=True">Hole Size Constraint: (3mm &gt; 2.54mm) Via (109.475mm,258.475mm) from Top Layer to Bottom Layer Actual Hole Size = 3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4775.359mil|Location2.X=4953.775mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4775.359mil|Location2.X=4953.775mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True">Hole Size Constraint: (4.5mm &gt; 2.54mm) Via (123.56mm,181.47mm) from Top Layer to Bottom Layer Actual Hole Size = 4.5mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5577.721mil|Location2.X=5756.137mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5577.721mil|Location2.X=5756.137mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True">Hole Size Constraint: (4.5mm &gt; 2.54mm) Via (143.94mm,181.47mm) from Top Layer to Bottom Layer Actual Hole Size = 4.5mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6507.643mil|Location2.X=6686.058mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6507.643mil|Location2.X=6686.058mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True">Hole Size Constraint: (4.5mm &gt; 2.54mm) Via (167.56mm,181.47mm) from Top Layer to Bottom Layer Actual Hole Size = 4.5mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7314.729mil|Location2.X=7493.145mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7314.729mil|Location2.X=7493.145mil|Location1.Y=7055.28mil|Location2.Y=7233.696mil|Absolute=True">Hole Size Constraint: (4.5mm &gt; 2.54mm) Via (188.06mm,181.47mm) from Top Layer to Bottom Layer Actual Hole Size = 4.5mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9132.249mil|Location2.X=9251.609mil|Location1.Y=4998.391mil|Location2.Y=5117.751mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9132.249mil|Location2.X=9251.609mil|Location1.Y=4998.391mil|Location2.Y=5117.751mil|Absolute=True">Hole Size Constraint: (3mm &gt; 2.54mm) Via (233.475mm,128.475mm) from Top Layer to Bottom Layer Actual Hole Size = 3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9132.249mil|Location2.X=9251.609mil|Location1.Y=10116.501mil|Location2.Y=10235.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9132.249mil|Location2.X=9251.609mil|Location1.Y=10116.501mil|Location2.Y=10235.861mil|Absolute=True">Hole Size Constraint: (3mm &gt; 2.54mm) Via (233.475mm,258.475mm) from Top Layer to Bottom Layer Actual Hole Size = 3mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2QKEZVAJA4EPIHG4WP1RVQT5QKKGD0MXERRJ2TPGCXN4FQLLOIZB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8712.387mil|Location2.X=8723.637mil|Location1.Y=5368.391mil|Location2.Y=5379.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8712.387mil|Location2.X=8723.637mil|Location1.Y=5368.391mil|Location2.Y=5379.641mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Pad OUT+-1(224.3mm,138mm) on Multi-Layer And Track (218.05mm,136.5mm)(221.25mm,136.5mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8700.576mil|Location2.X=8711.826mil|Location1.Y=6214.847mil|Location2.Y=6226.097mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8700.576mil|Location2.X=8711.826mil|Location1.Y=6214.847mil|Location2.Y=6226.097mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Pad OUT--1(224mm,159.5mm) on Multi-Layer And Track (217.75mm,158mm)(220.95mm,158mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6962.879mil|Location2.X=6974.129mil|Location1.Y=9684.828mil|Location2.Y=9696.078mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6962.879mil|Location2.X=6974.129mil|Location1.Y=9684.828mil|Location2.Y=9696.078mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Pad S+-1(175.5mm,249mm) on Multi-Layer And Track (177mm,242.75mm)(177mm,245.95mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8890.966mil|Location2.X=8902.216mil|Location1.Y=9684.828mil|Location2.Y=9696.078mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8890.966mil|Location2.X=8902.216mil|Location1.Y=9684.828mil|Location2.Y=9696.078mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Pad S--1(224.473mm,249mm) on Multi-Layer And Track (225.973mm,242.75mm)(225.973mm,245.95mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTVUYNNB2ECMSC51YYUBTTUIRUCJSFDWY2MQSNJBA0Q3WBTXDS1TE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7892.701mil|Location2.X=7894.701mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7892.701mil|Location2.X=7894.701mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True">Height Constraint: Small Component Co_1-UCP2G221MHD (200.5mm,139.412mm) on Top Layer Actual Height = 48mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7144.039mil|Location2.X=7146.039mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7144.039mil|Location2.X=7146.039mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True">Height Constraint: Small Component Co_2-UCP2G221MHD (181.484mm,139.412mm) on Top Layer Actual Height = 48mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6395.378mil|Location2.X=6397.378mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6395.378mil|Location2.X=6397.378mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True">Height Constraint: Small Component Co_3-UCP2G221MHD (162.468mm,139.412mm) on Top Layer Actual Height = 48mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5646.716mil|Location2.X=5648.716mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5646.716mil|Location2.X=5648.716mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True">Height Constraint: Small Component Co_4-UCP2G221MHD (143.452mm,139.412mm) on Top Layer Actual Height = 48mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4898.055mil|Location2.X=4900.055mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4898.055mil|Location2.X=4900.055mil|Location1.Y=5487.661mil|Location2.Y=5489.661mil|Absolute=True">Height Constraint: Small Component Co_5-UCP2G221MHD (124.436mm,139.412mm) on Top Layer Actual Height = 48mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4649.394mil|Location2.X=4651.394mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4649.394mil|Location2.X=4651.394mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True">Height Constraint: Small Component D1-STTH3012WL (118.12mm,162mm) on Bottom Layer Actual Height = 25.96mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5451.756mil|Location2.X=5453.756mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5451.756mil|Location2.X=5453.756mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True">Height Constraint: Small Component D2-STTH3012WL (138.5mm,162mm) on Bottom Layer Actual Height = 25.96mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6381.677mil|Location2.X=6383.677mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6381.677mil|Location2.X=6383.677mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True">Height Constraint: Small Component D3-STTH3012WL (162.12mm,162mm) on Bottom Layer Actual Height = 25.96mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7188.764mil|Location2.X=7190.764mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Karl_CLLC_SecondarySide\CLLC_SecondarSide_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7188.764mil|Location2.X=7190.764mil|Location1.Y=6376.953mil|Location2.Y=6378.953mil|Absolute=True">Height Constraint: Small Component D4-STTH3012WL (182.62mm,162mm) on Bottom Layer Actual Height = 25.96mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
