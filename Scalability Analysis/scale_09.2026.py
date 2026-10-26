@@ -150,6 +150,9 @@ def scale_geometry(baseline, V_new, I_new, Np_fixed):
             
     l_g_final = (low_g + high_g) / 2
     
+    # Recalculate final MPL with the final l_g
+    MPL_final = 2*l_window + 2*w_window + w_cent + math.pi/4*w_out - 2*l_g_final
+    
     # Final Verifications
     B_act = (V_new * T_s) / (4 * Np_fixed * A_calc)
     overall_width = 2 * w_window + w_cent + 2 * w_out
@@ -164,7 +167,12 @@ def scale_geometry(baseline, V_new, I_new, Np_fixed):
         "lambda_V": lambda_V, "lambda_I": lambda_I, "w_cent": w_cent,
         "l_cent": l_cent, "l_g": l_g_final, "A_calc": A_calc, "V_core": V_core,
         "w_wire": w_wire, "h_wire": h_wire, "d_inter": d_inter,
-        "d_left_right": d_left_right, "B_act": B_act, "V_box": V_box
+        "d_left_right": d_left_right, "B_act": B_act, "V_box": V_box,
+        # ADD THESE LINES:
+        "overall_width": overall_width, 
+        "overall_height": overall_height, 
+        "overall_length": overall_length,
+        "MPL": MPL_final
     }
 
 # ==============================================================================
@@ -214,5 +222,11 @@ if __name__ == "__main__":
     print(f"Copper Loss: {p_cu_new:.1f} W")
     print(f"Core Loss: {p_core_new:.1f} W")
     print(f"Skin Depth: {delta*1e3:.3f} mm")
-    if scaled['h_wire'] > delta:
-        print(f"WARNING: h_wire ({scaled['h_wire']*1e3:.2f} mm) exceeds skin depth ({delta*1e3:.2f} mm). Dowell F_ac will spike.")
+
+        
+    print("\n--- PHYSICAL DIMENSIONS ---")
+    print(f"Magnetic Path Length (MPL): {scaled['MPL']*1e3:.2f} mm")
+    print(f"Bounding Box Width: {scaled['overall_width']*1e3:.2f} mm")
+    print(f"Bounding Box Height: {scaled['overall_height']*1e3:.2f} mm")
+    print(f"Bounding Box Depth: {scaled['overall_length']*1e3:.2f} mm")
+    print(f"Total Box Volume: {scaled['V_box']*1e6:.2f} cm^3")

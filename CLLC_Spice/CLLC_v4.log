@@ -1,0 +1,35 @@
+LTspice 24.1.4 for Windows
+Circuit: C:\Users\karlr\Documents\CLLC_Spice\CLLC_v4.net
+Start Time: Wed Jul 22 07:45:13 2026
+Options: method=Gear  plotwinsize=0  abstol=3000p  chgtol=100f  reltol=0.01  vntol=10u  gmin=1e-8  Trtol=1  Sstol=0.001  ITL4=500
+solver = Alternate
+Maximum thread count: 20
+tnom = 27
+temp = 25
+method = Gear
+gmin = 1e-08
+abstol = 3e-09
+reltol = 0.01
+chgtol = 1e-13
+trtol = 1
+volttol = 1e-05
+Instance "m1:x1:Mr": Length shorter than recommended for a level 1 MOSFET.
+Instance "m1:x1:Mr": Width narrower than recommended for a level 1 MOSFET.
+Instance "m2:x1:Mr": Length shorter than recommended for a level 1 MOSFET.
+Instance "m2:x1:Mr": Width narrower than recommended for a level 1 MOSFET.
+Instance "m3:x1:Mr": Length shorter than recommended for a level 1 MOSFET.
+Instance "m3:x1:Mr": Width narrower than recommended for a level 1 MOSFET.
+Instance "m4:x1:Mr": Length shorter than recommended for a level 1 MOSFET.
+Instance "m4:x1:Mr": Width narrower than recommended for a level 1 MOSFET.
+Instance "m1:x1:M1": Width narrower than recommended for a level 3 MOSFET.
+Instance "m2:x1:M1": Width narrower than recommended for a level 3 MOSFET.
+Instance "m3:x1:M1": Width narrower than recommended for a level 3 MOSFET.
+Instance "m4:x1:M1": Width narrower than recommended for a level 3 MOSFET.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 1269.893 seconds.
+
+Files loaded:
+C:\Users\karlr\Documents\CLLC_Spice\CLLC_v4.net
+C:\Users\karlr\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\karlr\Documents\CLLC_Spice\IFX_CFD7A_650V.lib
+
